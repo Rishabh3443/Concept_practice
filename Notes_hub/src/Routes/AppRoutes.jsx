@@ -10,6 +10,8 @@ import PublicRoutes from "../Routes/PublicRoutes";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addUser } from "../features/AuthSlice";
+import ShopPage from "../pages/ShopPage";
+import AboutPage from "../pages/AboutPage";
 
 
 const AppRoutes = () => {
@@ -56,6 +58,7 @@ const AppRoutes = () => {
         },
       ],
     },
+
     {
       path: "/main",
       element: <ProtectedRoutes />,
@@ -65,9 +68,22 @@ const AppRoutes = () => {
           element: <MainLayout />,
           children: [
             {
-              path: "",
+              path: "Home",
               element: <Home />,
+              
             },
+            {
+
+                path:"shop",
+                element:<ShopPage/>,
+                
+              },
+               {
+
+                path:"About",
+                element:<AboutPage />,
+                
+              }
           ],
         },
       ],

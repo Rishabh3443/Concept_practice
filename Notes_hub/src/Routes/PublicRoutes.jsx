@@ -8,7 +8,7 @@ const PublicRoutes = () => {
   
 
   if(user){
-    return <Navigate to={"/main "} />
+    return <Navigate to={"/main"} />
     console.log("main chalra hu");
     
   }
