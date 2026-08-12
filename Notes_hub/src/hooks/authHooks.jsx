@@ -40,8 +40,7 @@ export const useAuth = () => {
     else{
        dispatch(addUser(user));
       localStorage.setItem("loggedInUser",JSON.stringify(user));
-      toast.success("user logged in");
-      
+      toast.success("user logged in"); 
       reset();
     }
 

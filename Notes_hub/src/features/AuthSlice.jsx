@@ -6,8 +6,10 @@ const Auth = createSlice({
      name:"auth",
      initialState:{
         user:null,
+        
         isAuthenticated: false,
      },
+     
 
      reducers:{
         addUser:(state,action)=>{
@@ -19,6 +21,7 @@ const Auth = createSlice({
             state.isAuthenticated = false;
         }
      }
+
 
 
 });
