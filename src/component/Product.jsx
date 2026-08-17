@@ -3,7 +3,6 @@ import React from 'react'
 
 const Product = ({ product }) => {
 
-console.log("bhai data hai?",product);
   return (
     <div className="group w-full max-w-sm overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
