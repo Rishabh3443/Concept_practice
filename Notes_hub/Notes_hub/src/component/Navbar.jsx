@@ -22,7 +22,7 @@ const Navbar = () => {
         to={"shop"}
         end
       >
-        Shop
+        shop
       </NavLink>
       <NavLink
       className={({isActive})=>{
